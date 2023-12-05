@@ -1,0 +1,2 @@
+1) SELECT * FROM `students` JOIN degrees ON students.`degree_id` = degrees.`id` WHERE degrees.`name` = "Corso di Laurea in Economia";
+1) SELECT students.`name`, degrees.`name` FROM `students` JOIN degrees ON students.`degree_id` = degrees.`id` WHERE degrees.`name` = "Corso di Laurea in Economia";
