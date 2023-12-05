@@ -3,3 +3,4 @@
 2) SELECT * FROM degrees JOIN departments ON degrees.` department_id`  = departments.`id`  WHERE departments.`name` = "Dipartimento di Neuroscienze" AND degrees.`level`="magistrale"; 
 3) SELECT count(`course_id`) as `numero_corsi` FROM `course_teacher` WHERE `course_teacher`.`teacher_id`= 44;
 4) SELECT * FROM students JOIN `degrees` ON `students`.`degree_id` = `degrees`.`id` JOIN `departments` ON `degrees`.`department_id` = `departments`.`id` ORDER BY `students`.`surname` ASC;
+5) SELECT * FROM `degrees` JOIN `courses` ON `degrees`.`id` = `courses`.`degree_id` JOIN `course_teacher` ON `courses`.`id` = `course_teacher`.`course_id` JOIN `teachers` ON `teachers`.`id` = `course_teacher`.`teacher_id`;
